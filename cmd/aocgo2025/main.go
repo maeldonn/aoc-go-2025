@@ -6,6 +6,7 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/maeldonn/aoc-go-2025/internal/day1"
 	aocgoclient "github.com/maeldonn/aoc-go-client"
 )
 
@@ -31,6 +32,11 @@ func main() {
 	}
 
 	var partOne, partTwo func([]string) any
+	switch day {
+	case 1:
+		partOne = day1.PartOne
+		partTwo = day1.PartTwo
+	}
 
 	fmt.Printf("########## Day %d ##########\n", day)
 
