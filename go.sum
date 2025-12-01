@@ -1,0 +1,14 @@
+github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/go-playground/assert/v2 v2.2.0 h1:JvknZsQTYeFEAhQwI4qEt9cyV5ONwRHC+lYKSsYSR8s=
+github.com/go-playground/assert/v2 v2.2.0/go.mod h1:VDjEfimB/XKnb+ZQfWdccd7VUvScMdVu0Titje2rxJ4=
+github.com/maeldonn/aoc-go-client v0.0.0-20241201205210-e0613f83a827 h1:GVE1ci9gwDouc+1WLLgyb8l+tpZKtQXCKELSg62SUrs=
+github.com/maeldonn/aoc-go-client v0.0.0-20241201205210-e0613f83a827/go.mod h1:X6JWYSY/ftpVdK3RPjjIXW2pkoGlkW0SInFDJZXxjq4=
+github.com/maeldonn/aoc-go-client v0.0.0-20251204210032-811e095e575d h1:zXFxBwzk+CJUAquZY2X9d8GMWxSSJpdBWfuMOxU0eGc=
+github.com/maeldonn/aoc-go-client v0.0.0-20251204210032-811e095e575d/go.mod h1:AZ3Ac7TM2IfFpqkDuGzGbwXXhBbiyL0WFeymQX8IT5A=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/stretchr/testify v1.10.0 h1:Xv5erBjTwe/5IxqUQTdXv5kgmIvbHo3QQyRwhJsOfJA=
+github.com/stretchr/testify v1.10.0/go.mod h1:r2ic/lqez/lEtzL7wO/rwa5dbSLXVDPFyf8C91i36aY=
+gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
+gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
