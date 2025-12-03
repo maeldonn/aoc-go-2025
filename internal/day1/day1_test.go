@@ -21,11 +21,15 @@ var input = []string{
 }
 
 func TestPartOne(t *testing.T) {
+	t.Parallel()
+
 	got := PartOne(input)
 	assert.Equal(t, 3, got)
 }
 
 func TestPartTwo(t *testing.T) {
+	t.Parallel()
+
 	got := PartTwo(input)
 	assert.Equal(t, 16, got)
 }
