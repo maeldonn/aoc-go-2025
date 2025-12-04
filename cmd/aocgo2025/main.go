@@ -9,6 +9,7 @@ import (
 	"github.com/maeldonn/aoc-go-2025/internal/day1"
 	"github.com/maeldonn/aoc-go-2025/internal/day2"
 	"github.com/maeldonn/aoc-go-2025/internal/day3"
+	"github.com/maeldonn/aoc-go-2025/internal/day4"
 	aocgoclient "github.com/maeldonn/aoc-go-client"
 )
 
@@ -44,6 +45,9 @@ func main() {
 	case 3:
 		partOne = day3.PartOne
 		partTwo = day3.PartTwo
+	case 4:
+		partOne = day4.PartOne
+		partTwo = day4.PartTwo
 	}
 
 	fmt.Printf("########## Day %d ##########\n", day)
