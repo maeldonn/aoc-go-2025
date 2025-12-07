@@ -12,6 +12,7 @@ import (
 	"github.com/maeldonn/aoc-go-2025/internal/day4"
 	"github.com/maeldonn/aoc-go-2025/internal/day5"
 	"github.com/maeldonn/aoc-go-2025/internal/day6"
+	"github.com/maeldonn/aoc-go-2025/internal/day7"
 	aocgoclient "github.com/maeldonn/aoc-go-client"
 )
 
@@ -56,6 +57,9 @@ func main() {
 	case 6:
 		partOne = day6.PartOne
 		partTwo = day6.PartTwo
+	case 7:
+		partOne = day7.PartOne
+		partTwo = day7.PartTwo
 	default:
 		panic("invalid day for year 2025")
 	}
