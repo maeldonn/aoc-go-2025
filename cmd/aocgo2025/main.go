@@ -13,8 +13,26 @@ import (
 	"github.com/maeldonn/aoc-go-2025/internal/day5"
 	"github.com/maeldonn/aoc-go-2025/internal/day6"
 	"github.com/maeldonn/aoc-go-2025/internal/day7"
+	"github.com/maeldonn/aoc-go-2025/internal/day8"
 	aocgoclient "github.com/maeldonn/aoc-go-client"
 )
+
+type DaySolver struct {
+	PartOne func([]string) any
+	PartTwo func([]string) any
+}
+
+var days = []DaySolver{
+	{},
+	{day1.PartOne, day1.PartTwo},
+	{day2.PartOne, day2.PartTwo},
+	{day3.PartOne, day3.PartTwo},
+	{day4.PartOne, day4.PartTwo},
+	{day5.PartOne, day5.PartTwo},
+	{day6.PartOne, day6.PartTwo},
+	{day7.PartOne, day7.PartTwo},
+	{day8.PartOne, day8.PartTwo},
+}
 
 func main() {
 	dayStr, ok := os.LookupEnv("DAY")
@@ -27,6 +45,10 @@ func main() {
 		panic(err)
 	}
 
+	if day < 1 || day >= len(days) {
+		panic(fmt.Sprintf("invalid day %d for year 2025", day))
+	}
+
 	client, err := aocgoclient.NewClient()
 	if err != nil {
 		panic(err)
@@ -37,40 +59,18 @@ func main() {
 		panic(err)
 	}
 
-	var partOne, partTwo func([]string) any
-	switch day {
-	case 1:
-		partOne = day1.PartOne
-		partTwo = day1.PartTwo
-	case 2:
-		partOne = day2.PartOne
-		partTwo = day2.PartTwo
-	case 3:
-		partOne = day3.PartOne
-		partTwo = day3.PartTwo
-	case 4:
-		partOne = day4.PartOne
-		partTwo = day4.PartTwo
-	case 5:
-		partOne = day5.PartOne
-		partTwo = day5.PartTwo
-	case 6:
-		partOne = day6.PartOne
-		partTwo = day6.PartTwo
-	case 7:
-		partOne = day7.PartOne
-		partTwo = day7.PartTwo
-	default:
-		panic("invalid day for year 2025")
+	solver := days[day]
+	if solver.PartOne == nil || solver.PartTwo == nil {
+		panic(fmt.Sprintf("no solver registered for day %d", day))
 	}
 
 	fmt.Printf("########## Day %d ##########\n", day)
 
 	start1 := time.Now()
-	part1 := partOne(input)
+	part1 := solver.PartOne(input)
 	fmt.Printf("Solution of part 1: %v (took %s)\n", part1, time.Since(start1))
 
 	start2 := time.Now()
-	part2 := partTwo(input)
+	part2 := solver.PartTwo(input)
 	fmt.Printf("Solution of part 2: %v (took %s)\n", part2, time.Since(start2))
 }
