@@ -9,6 +9,7 @@ import (
 	"github.com/maeldonn/aoc-go-2025/internal/day1"
 	"github.com/maeldonn/aoc-go-2025/internal/day10"
 	"github.com/maeldonn/aoc-go-2025/internal/day11"
+	"github.com/maeldonn/aoc-go-2025/internal/day12"
 	"github.com/maeldonn/aoc-go-2025/internal/day2"
 	"github.com/maeldonn/aoc-go-2025/internal/day3"
 	"github.com/maeldonn/aoc-go-2025/internal/day4"
@@ -38,6 +39,7 @@ var days = []DaySolver{
 	{day9.PartOne, day9.PartTwo},
 	{day10.PartOne, day10.PartTwo},
 	{day11.PartOne, day11.PartTwo},
+	{day12.PartOne, day12.PartTwo},
 }
 
 func main() {
