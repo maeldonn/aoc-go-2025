@@ -28,5 +28,5 @@ func TestPartTwo(t *testing.T) {
 	t.Parallel()
 
 	got := PartTwo(input)
-	assert.Equal(t, 0, got)
+	assert.Equal(t, 24, got)
 }
